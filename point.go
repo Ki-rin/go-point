@@ -28,15 +28,3 @@ type Circle struct {
 func (c Circle) Abs() float64 {
 	return c.Radius * c.Radius
 }
-
-func main() {
-	objects := []Magnitude{
-		Point{3, 4},  // Abs = 3*3 + 4*4 = 25
-		Circle{5},    // Abs = 5*5 = 25
-		Point{5, 12}, // Abs = 25 + 144 = 169
-	}
-
-	for i, obj := range objects {
-		fmt.Printf("Object #%d magnitude: %.2f\n", i+1, obj.Abs())
-	}
-}
