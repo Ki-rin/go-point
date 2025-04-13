@@ -1,9 +1,5 @@
 package points
 
-import (
-	"fmt"
-)
-
 // Magnitude is an interface for anything that has a "size"
 type Magnitude interface {
 	Abs() float64
